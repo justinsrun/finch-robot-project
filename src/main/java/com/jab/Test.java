@@ -7,7 +7,7 @@ public class Test {
         Finch myFinch = new Finch();
 
 
-        while (myFinch.getDistance() > 13) {
+        while (myFinch.getDistance() > 15) {
             int distance = myFinch.getDistance();
             System.out.println("Distance: " + distance);
             myFinch.setMove("F", 10, 100);
@@ -31,7 +31,38 @@ while (myFinch.getDistance() > 13) {
 
  myFinch.setTurn("R", 90, 100);
 
+myFinch.setMove("F", 45, 100);
 
+myFinch.setTurn("R", 90, 100);
+
+while (myFinch.getDistance() > 9) {
+    int distance = myFinch.getDistance();
+    System.out.println("Distance: " + distance);
+    myFinch.setMove("F", 10, 100);
+}
+
+myFinch.setTurn("R", 90, 100);
+
+while (myFinch.getDistance() > 8) {
+    int distance = myFinch.getDistance();
+    System.out.println("Distance: " + distance);
+    myFinch.setMove("F", 10, 100);
+}
+
+myFinch.setTurn("L", 90, 100);
+while (myFinch.getDistance() > 10) {
+    int distance = myFinch.getDistance();
+    System.out.println("Distance: " + distance);
+    myFinch.setMove("F", 10, 100);
+}
+
+myFinch.setTurn("L", 90, 100);
+
+while (myFinch.getDistance() > 5) {
+    int distance = myFinch.getDistance();
+    System.out.println("Distance: " + distance);
+    myFinch.setMove("F", 10, 100);
+}
         myFinch.stopAll();
         myFinch.disconnect();
     }
